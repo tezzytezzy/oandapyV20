@@ -5,9 +5,9 @@ I find quite a few sample codes are scattered aound on Internet to retrieve pric
 
 Here below I compile them neatly for the followings:
 
-1. [Get Current Price](https://github.com/tezzytezzy/oandapyV20#get-current-price)
-2. [Get Streaming Price](https://github.com/tezzytezzy/oandapyV20#get-streaming-price)
-3. [Get Historical Price](https://github.com/tezzytezzy/oandapyV201#get-historical-price)
+1. [Get Current Price](https://github.com/tezzytezzy/oandapyV20-in-Python#get-current-price)
+2. [Get Streaming Price](https://github.com/tezzytezzy/oandapyV20-in-Python#get-streaming-price)
+3. [Get Historical Price](https://github.com/tezzytezzy/oandapyV20-in-Python#get-historical-price)
 
 First of all, download the package:
 ```bash
