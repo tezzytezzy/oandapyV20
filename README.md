@@ -39,6 +39,8 @@ Create **config_v20.txt** file in the YAML syntax under **./Config**. It include
     api_key = config['oanda']['api_key']
 
     print(account_id + "\n" + api_key)
+    
+    api = oandapyV20.API(access_token=api_key)
 ```
 
 Get Current Price
