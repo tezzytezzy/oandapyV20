@@ -8,6 +8,7 @@ Here below I compile them neatly for the followings:
 1. [Get Current Price](https://github.com/tezzytezzy/oandapyV20-in-Python#get-current-price)
 2. [Get Streaming Price](https://github.com/tezzytezzy/oandapyV20-in-Python#get-streaming-price)
 3. [Get Historical Price](https://github.com/tezzytezzy/oandapyV20-in-Python#get-historical-price)
+4. [Line Chart on Historical Price](https://github.com/tezzytezzy/oandapyV20-in-Python#get-historical-price)
 
 First of all, download the package:
 ```bash
@@ -92,4 +93,20 @@ Get Historical Price
                                        params=params)
     api.request(r)
     print(r.response)
+```
+
+Line Chart on Historical Prices
+--------------------
+```python
+    #Handy to use list comprehension
+    #If we don't cast to float from string, pyplot automatically sort y-value!
+    y_value_list = [float(dict["candles"][i]["mid"]['c']) for i in range(len(dict["candles"]))]
+    x_value_list = [dict["candles"][i]["time"][0:10] for i in range(len(dict["candles"]))]
+    
+    import matplotlib.pyplot as plt
+
+    plt.title(dict["instrument"] + " in interval of " + dict["granularity"])
+    plt.plot(x_value_list, y_value_list)
+    plt.xticks(rotation='vertical')
+    plt.show
 ```
