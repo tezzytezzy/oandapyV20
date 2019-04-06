@@ -110,3 +110,5 @@ Line Chart on Historical Prices
     plt.xticks(rotation='vertical')
     plt.show
 ```
+![](chart.png)
+
